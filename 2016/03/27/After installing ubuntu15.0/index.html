@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="ubuntu15.10,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Drelang" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/uploads/avatar.jpg?v=5.1.1">
+
+
+
+
+
+
+<meta name="description" content="2016/3/27 1.modify you hosts fileFirst of all,visit http://www.laod.cn and download the hosts file.Then,copy the content in the downloaded file into your local hosts file which locates in /etc/hosts.J">
+<meta name="keywords" content="ubuntu15.10">
+<meta property="og:type" content="article">
+<meta property="og:title" content="After installing ubuntu15.10">
+<meta property="og:url" content="http://www.drelang.cn/2016/03/27/After installing ubuntu15.0/index.html">
+<meta property="og:site_name" content="Drelang">
+<meta property="og:description" content="2016/3/27 1.modify you hosts fileFirst of all,visit http://www.laod.cn and download the hosts file.Then,copy the content in the downloaded file into your local hosts file which locates in /etc/hosts.J">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-20T08:15:42.996Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="After installing ubuntu15.10">
+<meta name="twitter:description" content="2016/3/27 1.modify you hosts fileFirst of all,visit http://www.laod.cn and download the hosts file.Then,copy the content in the downloaded file into your local hosts file which locates in /etc/hosts.J">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.drelang.cn/2016/03/27/After installing ubuntu15.0/">
+
+
+
+
+
+  <title>After installing ubuntu15.10 | Drelang</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-93100231-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Drelang</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.drelang.cn/2016/03/27/After installing ubuntu15.0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LanceXiong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Drelang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">After installing ubuntu15.10</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-03-27T00:00:00+08:00">
+                2016-03-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Personal/" itemprop="url" rel="index">
+                    <span itemprop="name">Personal</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/03/27/After installing ubuntu15.0/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/03/27/After installing ubuntu15.0/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p></p><p hidden="true">2016/3/27</p><p></p>
+<h2 id="1-modify-you-hosts-file"><a href="#1-modify-you-hosts-file" class="headerlink" title="1.modify you hosts file"></a>1.modify you <em>hosts</em> file</h2><p>First of all,visit <a href="http://www.laod.cn" target="_blank" rel="noopener">http://www.laod.cn</a> and download the hosts file.Then,copy the content in the downloaded file into your local hosts file which locates in <code>/etc/hosts</code>.Just excute the command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit /etc/hosts</span><br></pre></td></tr></table></figure>
+<p><hr></p>
+<h2 id="2-update-and-upgrade-your-system"><a href="#2-update-and-upgrade-your-system" class="headerlink" title="2.update and upgrade your system"></a>2.update and upgrade your system</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
+<p><hr></p>
+<h2 id="3-set-up-the-Chinese-input-method-–pinyin"><a href="#3-set-up-the-Chinese-input-method-–pinyin" class="headerlink" title="3.set up the Chinese input method –pinyin"></a>3.set up the Chinese input method –pinyin</h2><p>click the keyboard icon in the top-rhight corner of your computer and enter the <code>Set up Fcitx</code> to select Chinese input method –pinyin.</p>
+<p><hr></p>
+<h2 id="4-install-the-google-chrome-browser"><a href="#4-install-the-google-chrome-browser" class="headerlink" title="4.install the google-chrome browser"></a>4.install the google-chrome browser</h2><p>visit <a href="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" target="_blank" rel="noopener">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</a> download the latest package.and then,<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libappindicator1 libindicator7 </span><br><span class="line">sudo dpkg -i google-chrome-stable_current_amd64.deb </span><br><span class="line">sudo apt-get -f install</span><br></pre></td></tr></table></figure></p>
+<p>Then install <code>Postman</code>.</p>
+<p><hr></p>
+<h2 id="5-install-the-Sublime-Text-3"><a href="#5-install-the-Sublime-Text-3" class="headerlink" title="5.install the Sublime Text 3"></a>5.install the Sublime Text 3</h2><p>firstly,go to <code>/usr/bin</code>,and then<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:webupd8team/sublime-text-3</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install sublime-text</span><br></pre></td></tr></table></figure></p>
+<p>after install the application,you should try to install some useful plugins.In order to init the <code>package control</code>,you can refer to the website <a href="https://packagecontrol.io/installation#st3" target="_blank" rel="noopener">Installation - Package Control</a>.For some uesful packages,you can refer<a href="http://www.tuicool.com/articles/im2y6f" target="_blank" rel="noopener">常用的sublime插件（很爽哦）</a>.Personally,I recommend <code>OmniMarkupPreviewer</code>,  <code>SublimeCodeIntel</code>, <code>BracketHighlighter</code>, <code>Color Highlighter</code> ,<code>Emmet</code>,<code>Pretty JSON</code>git</p>
+<p><hr></p>
+<h2 id="6-install-Git"><a href="#6-install-Git" class="headerlink" title="6.install Git"></a>6.install Git</h2><p>firstly,go to <code>/usr/bin</code>,and then<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure></p>
+<p><hr></p>
+<h2 id="7-configure-the-LAMP-environment"><a href="#7-configure-the-LAMP-environment" class="headerlink" title="7.configure the LAMP environment"></a>7.configure the LAMP environment</h2><p>for  detailed tutorial,you can refer to <a href="http://www.jianshu.com/p/734e113eae50" target="_blank" rel="noopener">Ubuntu 安装 LAMP Server (Debian 系通用)</a></p>
+<p><hr></p>
+<h2 id="8-install-memcache"><a href="#8-install-memcache" class="headerlink" title="8.install memcache"></a>8.install memcache</h2><p>refer to the passage <a href="http://www.linuxde.net/2013/07/14890.html" target="_blank" rel="noopener">Ubuntu + LAMP 增加Memcache扩展模块</a><br>and <a href="http://blog.sina.com.cn/s/blog_643921350102vne6.html" target="_blank" rel="noopener">关于Ubuntu下安装phpmyadmin后mysqli丢失的解决</a>.<br>All the PHP extended module is located in <code>/usr/lib/php5/20131226</code>.To enable a module,we should modify the file <code>/etc/php5/apache2/php.ini</code>. And all module’s configuration file are in <code>/etc/php5/mods-available</code>.Modify two places in the <code>php.ini</code>.<br></p>
+<h4 id="one"><a href="#one" class="headerlink" title="one"></a>one</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">; Directory in which the loadable extensions (modules) reside.</span><br><span class="line"> ; http://php.net/extension-dir</span><br><span class="line">extension_dir = &quot;/usr/lib/php5/20131226/&quot;</span><br><span class="line">; On windows:</span><br><span class="line">; extension_dir = &quot;ext&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="two"><a href="#two" class="headerlink" title="two"></a>two</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">;;;;;;;;;;;;;;;;;;;;;</span><br><span class="line">; Dynamic Extensions ;</span><br><span class="line">;;;;;;;;;;;;;;;;;;;;;;</span><br><span class="line"></span><br><span class="line">; If you wish to have an extension loaded automatically, use the following</span><br><span class="line">; syntax:</span><br><span class="line">;</span><br><span class="line">;   extension=modulename.extension</span><br><span class="line">;</span><br><span class="line">; For example, on Windows:</span><br><span class="line">;</span><br><span class="line">;  extension=msql.dll</span><br><span class="line">;</span><br><span class="line">; ... or under UNIX:</span><br><span class="line">;</span><br><span class="line">extension=msql.so</span><br><span class="line">;</span><br></pre></td></tr></table></figure>
+<p><hr></p>
+<h2 id="9-turn-on-the-error-reporting-of-PHP"><a href="#9-turn-on-the-error-reporting-of-PHP" class="headerlink" title="9.turn on the  error_reporting of PHP"></a>9.turn on the  error_reporting of PHP</h2><p>refer to <a href="http://os.51cto.com/art/201103/248680.htm" target="_blank" rel="noopener">Ubuntu下LAMP的PHP错误提示的开启</a>.</p>
+<p><hr></p>
+<h2 id="10-favorite-links-in-Microsoft-Edge-browser"><a href="#10-favorite-links-in-Microsoft-Edge-browser" class="headerlink" title="10.favorite links in Microsoft Edge browser"></a>10.favorite links in Microsoft Edge browser</h2><p>/media/lang/系统/Users/lang/AppData/Local/Packages/Microsoft.MicrosoftEdge_8wekyb3d8bbwe/AC/MicrosoftEdge/User/Default/Favorites.</p>
+<p><hr></p>
+<h2 id="11-configure-virtual-hosts"><a href="#11-configure-virtual-hosts" class="headerlink" title="11.configure virtual hosts"></a>11.configure virtual hosts</h2><p>In <code>/etc/apache2/sites-available</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;VirtualHost *:80&gt;</span><br><span class="line">​        ServerName mobileportals.local</span><br><span class="line">​        ServerAdmin webmaster@test.tools.directhr.net</span><br><span class="line">​        DocumentRoot &quot;/var/www/html/mobileportals&quot;</span><br><span class="line">​        &lt;Directory &quot;/var/www/html/mobileportals&quot;&gt;</span><br><span class="line">​                Options Indexes FollowSymLinks</span><br><span class="line">​                AllowOverride All</span><br><span class="line">​                Order allow,deny</span><br><span class="line">​                Allow from all</span><br><span class="line">​        &lt;/Directory&gt;</span><br><span class="line">&lt;/VirtualHost&gt;</span><br></pre></td></tr></table></figure></p>
+<p>In <code>/etc/hosts</code><br>​<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//add this ip</span></span><br><span class="line"><span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>   mobileportals.local</span><br></pre></td></tr></table></figure></p>
+<p>Then<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo a2ensite mobileportals.local.conf</span><br><span class="line">sudo service apache2 restart</span><br></pre></td></tr></table></figure></p>
+<p><hr></p>
+<h2 id="12-解决Ubuntu下Sublime-Text-3无法输入中文"><a href="#12-解决Ubuntu下Sublime-Text-3无法输入中文" class="headerlink" title="12.解决Ubuntu下Sublime Text 3无法输入中文"></a>12.解决Ubuntu下Sublime Text 3无法输入中文</h2><p>refer to <a href="http://www.jianshu.com/p/bf05fb3a4709" target="_blank" rel="noopener">解决Ubuntu下Sublime Text 3无法输入中文</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我尼玛终于能输入中文了，再也不需要从其他地方复制中文了。</span><br></pre></td></tr></table></figure></p>
+<p>但是每次都要通过命令行执行<code>subl</code>才能输入中文</p>
+<p><hr></p>
+<h2 id="13-装搜狗输入法"><a href="#13-装搜狗输入法" class="headerlink" title="13.装搜狗输入法"></a>13.装搜狗输入法</h2><p>去官网直接下载即可<br><a href="http://pinyin.sogou.com/linux/" target="_blank" rel="noopener">搜狗输入法 for linux</a></p>
+<p><hr></p>
+<h2 id="14-管理系统服务"><a href="#14-管理系统服务" class="headerlink" title="14.管理系统服务"></a>14.管理系统服务</h2><p><a href="http://www.tsingpost.com/articles/201312/294.html" target="_blank" rel="noopener">三款不错的管理Ubuntu服务和启动项的软件</a><br>我装的是<code>bum</code>使用时在命令行输入<code>sudo bum</code>即可</p>
+<p><hr></p>
+<h2 id="15-Ubuntu输入su提示认证失败的解决方法"><a href="#15-Ubuntu输入su提示认证失败的解决方法" class="headerlink" title="15.Ubuntu输入su提示认证失败的解决方法"></a>15.Ubuntu输入su提示认证失败的解决方法</h2><p><a href="http://blog.csdn.net/henren555/article/details/7546508" target="_blank" rel="noopener">Ubuntu输入su提示认证失败的解决方法</a></p>
+<p><hr></p>
+<h2 id="16-ubuntu-开机自动挂载指定磁盘分区"><a href="#16-ubuntu-开机自动挂载指定磁盘分区" class="headerlink" title="16. ubuntu 开机自动挂载指定磁盘分区"></a>16. ubuntu 开机自动挂载指定磁盘分区</h2><p><a href="http://blog.csdn.net/zhangyongjun_2012/article/details/9089669" target="_blank" rel="noopener"> ubuntu 开机自动挂载指定磁盘分区</a></p>
+<p><hr></p>
+<h2 id="17-close-system-service"><a href="#17-close-system-service" class="headerlink" title="17.close system service"></a>17.close system service</h2><p>The most useful commands:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get install sysv-rc-conf</span><br><span class="line">sudo sysv-rc-conf</span><br></pre></td></tr></table></figure></p>
+<p>but the service <code>mysql</code> should be shut down by configuring the file in <code>/etc/init/mysql.conf</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># MySQL Service</span><br><span class="line"></span><br><span class="line">description     &quot;MySQL Server&quot;</span><br><span class="line">author          &quot;Mario Limonciello &lt;superm1@ubuntu.com&gt;&quot;</span><br><span class="line"></span><br><span class="line">start on runlevel [2345]</span><br><span class="line">stop on starting rc RUNLEVEL=[016]</span><br><span class="line"></span><br><span class="line">respawn</span><br><span class="line">respawn limit 2 5</span><br></pre></td></tr></table></figure></p>
+<p><hr></p>
+<h2 id="18-usual-operation-commands-and-key-bindings"><a href="#18-usual-operation-commands-and-key-bindings" class="headerlink" title="18.usual operation commands and key bindings"></a>18.usual operation commands and key bindings</h2><p><a href="http://www.letboo.com/thread-166-1-1.html" target="_blank" rel="noopener">ubuntu 终端关机启动命令 和 常用的快捷键</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo  reboot   （直接重启系统）</span><br><span class="line">sudo  shutdown  -r  now  （立刻重启)</span><br><span class="line">sudo  poweroff    （立刻关机）</span><br></pre></td></tr></table></figure></p>
+<p><hr></p>
+<h2 id="19-install-WPS-office"><a href="#19-install-WPS-office" class="headerlink" title="19.install WPS office"></a>19.install WPS office</h2><p>安装方式.<br><br><a href="http://community.wps.cn/download/" target="_blank" rel="noopener">WPS下载地址</a><br><br><a href="http://download.csdn.net/download/qq_24146957/9406046" target="_blank" rel="noopener">字体文件</a><br><br>以上安装包双击即可安装。<br>终端命令对应启动word，excel，ppt<br>​<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wps   <span class="comment">//word</span></span><br><span class="line">et      <span class="comment">//excel</span></span><br><span class="line">wpp  <span class="comment">//ppt</span></span><br></pre></td></tr></table></figure></p>
+<p><hr></p>
+<h2 id="20-装Eclipse"><a href="#20-装Eclipse" class="headerlink" title="20.装Eclipse"></a>20.装Eclipse</h2><p>先装JAVA7环境<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install openjdk-7-jre</span><br></pre></td></tr></table></figure></p>
+<p>然后下载最新版的Eclipse<a href="http://www.eclipse.org/downloads/" target="_blank" rel="noopener">www.eclipse.org/downloads</a></p>
+<p><hr></p>
+<h2 id="21-Ubuntu下非常给力的下载工具–uget-aria2"><a href="#21-Ubuntu下非常给力的下载工具–uget-aria2" class="headerlink" title="21.Ubuntu下非常给力的下载工具–uget+aria2"></a>21.Ubuntu下非常给力的下载工具–uget+aria2</h2><p><a href="http://ugetdm.com/downloads" target="_blank" rel="noopener">Ubuntu下非常给力的下载工具–uget+aria2</a></p>
+<p><hr></p>
+<h2 id="22-music"><a href="#22-music" class="headerlink" title="22.music"></a>22.music</h2><p><a href="https://github.com/darknessomi/musicbox" target="_blank" rel="noopener">NetEase-MusicBox</a><br>links <a href="http://blog.163.com/thinki_cao/blog/static/839448752012112694037995/" target="_blank" rel="noopener">Ubuntu下关闭apache和mysql的开机启动</a></p>
+<h2 id="useful-links"><a href="#useful-links" class="headerlink" title="useful links"></a>useful links</h2><p><a href="http://blog.csdn.net/skykingf/article/details/45267517" target="_blank" rel="noopener">安装Ubuntu 15.10后要做的事 </a><br><br><a href="http://yanceywang.com/2015/07/30/Ubuntu+Hexo+GithubPages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">Hexo+Ubuntu+GithubPages搭建个人博客(基础篇)</a><br></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ubuntu15-10/" rel="tag"># ubuntu15.10</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/06/Markdown学习与实践/" rel="next" title="Markdown学习与实践">
+                <i class="fa fa-chevron-left"></i> Markdown学习与实践
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/28/Git operations/" rel="prev" title="Git operations">
+                Git operations <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="LanceXiong">
+          <p class="site-author-name" itemprop="name">LanceXiong</p>
+           
+              <p class="site-description motion-element" itemprop="description">Recording my study.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">45</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-modify-you-hosts-file"><span class="nav-number">1.</span> <span class="nav-text">1.modify you hosts file</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-update-and-upgrade-your-system"><span class="nav-number">2.</span> <span class="nav-text">2.update and upgrade your system</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-set-up-the-Chinese-input-method-–pinyin"><span class="nav-number">3.</span> <span class="nav-text">3.set up the Chinese input method –pinyin</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-install-the-google-chrome-browser"><span class="nav-number">4.</span> <span class="nav-text">4.install the google-chrome browser</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-install-the-Sublime-Text-3"><span class="nav-number">5.</span> <span class="nav-text">5.install the Sublime Text 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-install-Git"><span class="nav-number">6.</span> <span class="nav-text">6.install Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-configure-the-LAMP-environment"><span class="nav-number">7.</span> <span class="nav-text">7.configure the LAMP environment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-install-memcache"><span class="nav-number">8.</span> <span class="nav-text">8.install memcache</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#one"><span class="nav-number">8.0.1.</span> <span class="nav-text">one</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#two"><span class="nav-number">8.0.2.</span> <span class="nav-text">two</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#9-turn-on-the-error-reporting-of-PHP"><span class="nav-number">9.</span> <span class="nav-text">9.turn on the  error_reporting of PHP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-favorite-links-in-Microsoft-Edge-browser"><span class="nav-number">10.</span> <span class="nav-text">10.favorite links in Microsoft Edge browser</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-configure-virtual-hosts"><span class="nav-number">11.</span> <span class="nav-text">11.configure virtual hosts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-解决Ubuntu下Sublime-Text-3无法输入中文"><span class="nav-number">12.</span> <span class="nav-text">12.解决Ubuntu下Sublime Text 3无法输入中文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-装搜狗输入法"><span class="nav-number">13.</span> <span class="nav-text">13.装搜狗输入法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-管理系统服务"><span class="nav-number">14.</span> <span class="nav-text">14.管理系统服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-Ubuntu输入su提示认证失败的解决方法"><span class="nav-number">15.</span> <span class="nav-text">15.Ubuntu输入su提示认证失败的解决方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-ubuntu-开机自动挂载指定磁盘分区"><span class="nav-number">16.</span> <span class="nav-text">16. ubuntu 开机自动挂载指定磁盘分区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-close-system-service"><span class="nav-number">17.</span> <span class="nav-text">17.close system service</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#18-usual-operation-commands-and-key-bindings"><span class="nav-number">18.</span> <span class="nav-text">18.usual operation commands and key bindings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-install-WPS-office"><span class="nav-number">19.</span> <span class="nav-text">19.install WPS office</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#20-装Eclipse"><span class="nav-number">20.</span> <span class="nav-text">20.装Eclipse</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#21-Ubuntu下非常给力的下载工具–uget-aria2"><span class="nav-number">21.</span> <span class="nav-text">21.Ubuntu下非常给力的下载工具–uget+aria2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#22-music"><span class="nav-number">22.</span> <span class="nav-text">22.music</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#useful-links"><span class="nav-number">23.</span> <span class="nav-text">useful links</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">LanceXiong</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Drelang.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://www.drelang.cn/2016/03/27/After installing ubuntu15.0/';
+          this.page.identifier = '2016/03/27/After installing ubuntu15.0/';
+          this.page.title = 'After installing ubuntu15.10';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Drelang.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
