@@ -2,254 +2,268 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.drelang.cn/2019/08/22/frp%20%E5%81%9A%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
+    
+    <lastmod>2019-08-22T00:52:42.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.drelang.cn/draft/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E7%AC%94%E8%AF%95.html</loc>
+    
+    <lastmod>2019-08-22T00:20:28.614Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.drelang.cn/2019/03/28/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%20samba%20%E6%9C%8D%E5%8A%A1%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</loc>
     
-    <lastmod>2019-03-28T13:34:54.294Z</lastmod>
+    <lastmod>2019-03-28T13:34:54.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/about/index.html</loc>
     
-    <lastmod>2019-02-20T09:13:24.513Z</lastmod>
+    <lastmod>2019-02-20T09:13:24.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/10/10/MySQL%205.7%20%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%EF%BC%8C%E6%8E%88%E6%9D%83%EF%BC%8C%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7/</loc>
     
-    <lastmod>2018-12-23T04:43:52.712Z</lastmod>
+    <lastmod>2018-12-23T04:43:52.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/12/20/%E5%9F%BA%E4%BA%8E%20Docker%20%E6%90%AD%E5%BB%BA%E5%B1%80%E5%9F%9F%E7%BD%91%20Gitlab%20%E6%9C%8D%E5%8A%A1/</loc>
     
-    <lastmod>2018-12-20T09:16:03.862Z</lastmod>
+    <lastmod>2018-12-20T09:16:03.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/11/22/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/</loc>
     
-    <lastmod>2018-12-20T09:06:52.635Z</lastmod>
+    <lastmod>2018-12-20T09:06:52.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/10/21/%E7%90%86%E8%A7%A3%20Nginx%20%E4%B8%8B%E7%9A%84%20fastcgi.conf%20%E6%96%87%E4%BB%B6/</loc>
     
-    <lastmod>2018-12-20T09:00:31.058Z</lastmod>
+    <lastmod>2018-12-20T09:00:31.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/10/21/Docker%20%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86/</loc>
     
-    <lastmod>2018-12-20T08:52:38.754Z</lastmod>
+    <lastmod>2018-12-20T08:52:38.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/10/21/Git%20%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%8C%E4%BD%86%E6%98%AF%E4%BF%9D%E7%95%99%E7%A9%BA%E6%96%87%E4%BB%B6%E5%A4%B9/</loc>
     
-    <lastmod>2018-12-20T08:49:16.709Z</lastmod>
+    <lastmod>2018-12-20T08:49:16.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/07/19/%E6%89%B9%E9%87%8F%20ab%20%E6%B5%8B%E8%AF%95/</loc>
     
-    <lastmod>2018-12-20T08:46:34.382Z</lastmod>
+    <lastmod>2018-12-20T08:46:34.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/10/21/%E6%8E%A8%E9%80%81%E9%95%9C%E5%83%8F%E5%88%B0%20Docker%20Hub/</loc>
     
-    <lastmod>2018-12-20T08:38:06.067Z</lastmod>
+    <lastmod>2018-12-20T08:38:06.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/10/18/Ubuntu%20%E5%BC%80%E5%90%AF%E9%98%B2%E7%81%AB%E5%A2%99%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3/</loc>
     
-    <lastmod>2018-12-20T08:36:19.999Z</lastmod>
+    <lastmod>2018-12-20T08:36:19.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/10/16/Ubuntu18.04%20%E5%AE%89%E8%A3%85%20sublime-text-3%EF%BC%8C%E5%B9%B6%E6%94%AF%E6%8C%81%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5/</loc>
     
-    <lastmod>2018-12-20T08:32:25.515Z</lastmod>
+    <lastmod>2018-12-20T08:32:25.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2017/05/18/%E7%94%A8pyinstall%E6%89%93%E5%8C%85PyQt5%E7%A8%8B%E5%BA%8F/</loc>
     
-    <lastmod>2018-12-20T08:29:35.079Z</lastmod>
+    <lastmod>2018-12-20T08:29:35.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2016/03/02/%E7%94%A8Hexo%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
     
-    <lastmod>2018-12-20T08:29:27.264Z</lastmod>
+    <lastmod>2018-12-20T08:29:27.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/03/05/%E6%9F%A5%E6%89%BE32%E4%BD%8D%E6%97%A0%E7%AC%A6%E5%8F%B7%E6%95%B4%E5%BD%A2%E6%95%B0%E4%B8%AD1%E7%9A%84%E4%B8%AA%E6%95%B0/</loc>
     
-    <lastmod>2018-12-20T08:29:14.357Z</lastmod>
+    <lastmod>2018-12-20T08:29:14.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2017/07/08/%E5%88%9D%E6%8E%A2pagodabox/</loc>
     
-    <lastmod>2018-12-20T08:28:11.056Z</lastmod>
+    <lastmod>2018-12-20T08:28:11.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2017/11/08/%E4%B8%80%E7%A7%8D%E8%BF%9C%E7%A8%8B%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%96%B9%E6%A1%88/</loc>
     
-    <lastmod>2018-12-20T08:24:41.303Z</lastmod>
+    <lastmod>2018-12-20T08:24:41.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/10/14/sql%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%EF%BC%8C%E5%88%99%E6%89%A7%E8%A1%8Cupdate%E6%9B%B4%E6%96%B0/</loc>
     
-    <lastmod>2018-12-20T08:23:43.973Z</lastmod>
+    <lastmod>2018-12-20T08:23:43.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/09/27/openresty1.13%20%E4%B8%8E%20nginx+php7.0-fpm%20%E5%8E%8B%E6%B5%8B%E5%AF%B9%E6%AF%94/</loc>
     
-    <lastmod>2018-12-20T08:23:14.692Z</lastmod>
+    <lastmod>2018-12-20T08:23:14.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/10/10/nginx%20luaopenresty%20%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86/</loc>
     
-    <lastmod>2018-12-20T08:23:10.786Z</lastmod>
+    <lastmod>2018-12-20T08:23:10.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/07/20/Nginx%20+%20Yii2%20%E9%85%8D%E7%BD%AE/</loc>
     
-    <lastmod>2018-12-20T08:23:06.794Z</lastmod>
+    <lastmod>2018-12-20T08:23:06.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2016/03/30/Mongodb%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
     
-    <lastmod>2018-12-20T08:22:57.573Z</lastmod>
+    <lastmod>2018-12-20T08:22:57.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2016/03/06/Markdown%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/</loc>
     
-    <lastmod>2018-12-20T08:16:36.466Z</lastmod>
+    <lastmod>2018-12-20T08:16:36.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/09/13/Linux%20%E6%9F%A5%E7%9C%8B%20cpu,%20mem,%20disk%20%E5%92%8C%20network%20%E4%BF%A1%E6%81%AF/</loc>
     
-    <lastmod>2018-12-20T08:16:27.825Z</lastmod>
+    <lastmod>2018-12-20T08:16:27.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/10/15/Git%20%E6%97%A0%E6%B3%95%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6/</loc>
     
-    <lastmod>2018-12-20T08:16:12.575Z</lastmod>
+    <lastmod>2018-12-20T08:16:12.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2016/03/28/Git%20operations/</loc>
     
-    <lastmod>2018-12-20T08:16:04.591Z</lastmod>
+    <lastmod>2018-12-20T08:16:04.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/draft/First%20show%20with%20guitar.html</loc>
     
-    <lastmod>2018-12-20T08:15:54.085Z</lastmod>
+    <lastmod>2018-12-20T08:15:54.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/09/12/CentOS%20%E4%BB%8E%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%B9%B6%E5%AE%89%E8%A3%85%20Nginx/</loc>
     
-    <lastmod>2018-12-20T08:15:48.421Z</lastmod>
+    <lastmod>2018-12-20T08:15:48.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2016/03/27/After%20installing%20ubuntu15.0/</loc>
     
-    <lastmod>2018-12-20T08:15:42.996Z</lastmod>
+    <lastmod>2018-12-20T08:15:42.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/09/11/Ubuntu%2016.04%20%E5%BC%95%E5%AF%BC%E4%BF%AE%E5%A4%8D%EF%BC%88boot-repair%EF%BC%89/</loc>
     
-    <lastmod>2018-12-20T07:43:50.671Z</lastmod>
+    <lastmod>2018-12-20T07:43:50.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2018/09/08/%E5%8A%A0%E6%9D%83%E6%B3%95%E6%8E%92%E5%BA%8F%E4%BA%8C%E5%80%BC%E5%BA%8F%E5%88%97%E6%89%80%E8%AE%B0%E5%BD%95%E7%9A%84%E5%AF%B9%E8%B1%A1%E9%9B%86/</loc>
     
-    <lastmod>2018-12-20T07:30:01.121Z</lastmod>
+    <lastmod>2018-12-20T07:30:01.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/tags/index.html</loc>
     
-    <lastmod>2018-10-29T11:37:36.381Z</lastmod>
+    <lastmod>2018-10-29T11:37:36.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/categories/index.html</loc>
     
-    <lastmod>2018-10-29T11:37:31.152Z</lastmod>
+    <lastmod>2018-10-29T11:37:31.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2017/03/07/bytes,strings%20and%20int%20in%20Python/</loc>
     
-    <lastmod>2017-07-29T05:44:37.472Z</lastmod>
+    <lastmod>2017-07-29T05:44:37.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2017/04/05/Python3%20tkinter%20%E4%BD%BF%E7%94%A8%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E5%9B%B0%E9%9A%BE/</loc>
     
-    <lastmod>2017-04-05T16:10:30.298Z</lastmod>
+    <lastmod>2017-04-05T16:10:30.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.drelang.cn/2016/04/02/%E3%80%8A%E6%8A%8A%E6%97%B6%E9%97%B4%E5%BD%93%E4%BD%9C%E6%9C%8B%E5%8F%8B%E3%80%8B%E8%AF%BB%E4%B9%A6%E5%BF%83%E5%BE%97/</loc>
     
-    <lastmod>2017-03-07T15:50:58.124Z</lastmod>
+    <lastmod>2017-03-07T15:50:58.000Z</lastmod>
     
   </url>
   
