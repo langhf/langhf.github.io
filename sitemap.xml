@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.drelang.cn/2018/09/12/CentOS%20%E4%BB%8E%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%B9%B6%E5%AE%89%E8%A3%85%20Nginx/</loc>
+    
+    <lastmod>2019-11-24T12:59:21.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.drelang.cn/2019/08/22/frp%20%E5%81%9A%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
     
     <lastmod>2019-08-22T00:52:42.000Z</lastmod>
@@ -11,7 +18,7 @@
   <url>
     <loc>http://www.drelang.cn/draft/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E7%AC%94%E8%AF%95.html</loc>
     
-    <lastmod>2019-08-22T00:20:28.614Z</lastmod>
+    <lastmod>2019-08-22T00:20:28.000Z</lastmod>
     
   </url>
   
@@ -201,13 +208,6 @@
     <loc>http://www.drelang.cn/draft/First%20show%20with%20guitar.html</loc>
     
     <lastmod>2018-12-20T08:15:54.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.drelang.cn/2018/09/12/CentOS%20%E4%BB%8E%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%B9%B6%E5%AE%89%E8%A3%85%20Nginx/</loc>
-    
-    <lastmod>2018-12-20T08:15:48.000Z</lastmod>
     
   </url>
   

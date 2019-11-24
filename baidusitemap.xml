@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.drelang.cn/2018/09/12/CentOS%20%E4%BB%8E%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%B9%B6%E5%AE%89%E8%A3%85%20Nginx/</loc>
+    <lastmod>2019-11-24</lastmod>
+  </url>  <url>
     <loc>http://www.drelang.cn/2019/08/22/frp%20%E5%81%9A%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
     <lastmod>2019-08-22</lastmod>
   </url>  <url>
@@ -83,9 +86,6 @@
     <lastmod>2018-12-20</lastmod>
   </url>  <url>
     <loc>http://www.drelang.cn/draft/First%20show%20with%20guitar.html</loc>
-    <lastmod>2018-12-20</lastmod>
-  </url>  <url>
-    <loc>http://www.drelang.cn/2018/09/12/CentOS%20%E4%BB%8E%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%B9%B6%E5%AE%89%E8%A3%85%20Nginx/</loc>
     <lastmod>2018-12-20</lastmod>
   </url>  <url>
     <loc>http://www.drelang.cn/2016/03/27/After%20installing%20ubuntu15.0/</loc>
